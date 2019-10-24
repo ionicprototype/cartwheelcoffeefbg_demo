@@ -1,0 +1,49 @@
+<% include ./partials/header %>
+
+<div class='container-fluid mt-3'>
+    <div class='row'>
+        <!-- ANNOUNCEMENTS CONTAINER -->
+        <!-- @DESC ADDING/VIEWING SITE ANNOUNCEMENTS (REFER TO ANNOUNCEMENTS PARTIALS) -->
+        <div class='col col-md-6 col-12 px-0'>
+            <% include ./partials/index/anmt_modal_new %>
+            <% include ./partials/index/anmt_list %>
+        </div>
+        <!-- UPCOMING EVENTS CONTAINER -->
+        <!-- @DESC POPULATES EVENTS WITH GOOGLE CALENDAR API (REFER TO UPCOMING PARTIAL/INDEX.JS -->
+        <div class='col col-md-6 col-12 px-0' id='upcomingEventsContainer'>
+            <% include ./partials/index/upcoming %>
+        </div>
+    </div>
+</div>
+
+<!-- Image Gallery Container -->
+<div class='container-fluid'>
+    <div class='row d-flex justify-content-center mt-5 mb-1'>
+        <h3 class="d-inline">STOP BY AND SEE US IN ACTION!</h3>
+        <!-- @DESC ADDS IMAGES TO DATABASE IF USER LOGGED IN (REFER TO IMAGE_MODAL PARTIAL)-->
+        <% if(user) { %>
+            <!-- Icon for Modal Images -->
+            <div class='d-inline' data-toggle='popover' data-trigger='hover' data-placement='right' data-content='Click to add new image.'>    
+                <span data-toggle='modal' data-target='#newImageModal' >
+                    <i class='fas fa-plus-square'></i>
+                </span>
+            </div> 
+            <!-- NEW IMAGE MODAL --> 
+            <% include ./partials/index/image_modal %>
+        <% } %>
+        </div>
+        <!-- IMAGE GALLERYy --> 
+        <!-- @DESC DISPLAYS IMAGES STORED IN DATABASE (REFER TO IMAGE_GALLERY PARTIAL) -->
+        <div class='row img-gallery-container'>
+            <% include ./partials/index/image_gallery %>
+        </div>        
+</div>
+
+<% include ./partials/login_modal %>
+<!-- SCRIPT REFERENCES TO INCLUDE -->
+<% include ./partials/footerScripts/scriptsjQueryPopper %>
+<% include ./partials/footerScripts/scriptsGoogleIndex %>
+<% include ./partials/footerScripts/scriptsBootstrap %>
+
+</body>
+</html>

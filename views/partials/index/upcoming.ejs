@@ -1,0 +1,22 @@
+<div class='row d-flex justify-content-center align-items-center'>
+        <h1>Upcoming Events</h1>
+</div>
+<div class='row'>
+    <div class='col-6 d-flex'>
+        <!-- Event Month Selector -->
+        <h3 class='selectedMonth ml-auto'>Month</h3>
+        <div class='dropdown pl-2 mr-auto'>
+            <i class='fas fa-caret-square-down' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'></i>
+            <div class='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+                <a class='dropdown-item'>January</a><a class='dropdown-item'>February</a><a class='dropdown-item'>March</a><a class='dropdown-item'>April</a><a class='dropdown-item'>May</a><a class='dropdown-item'>June</a><a class='dropdown-item'>July</a><a class='dropdown-item'>August</a><a class='dropdown-item'>September</a><a class='dropdown-item'>October</a><a class='dropdown-item'>November</a><a class='dropdown-item'>December</a>
+            </div>
+        </div>
+    </div>
+    <!-- Event Year Selector -->
+    <div class='col-6 d-flex'>
+        <i class='fas fa-minus-square decreaseYear'></i>
+        <h3 class='selectedYear mx-2'>Year</h3>
+        <i class='fas fa-plus-square increaseYear'></i>
+    </div>
+</div>
+<div class='flex-column overflow-auto' id='eventsList'></div>

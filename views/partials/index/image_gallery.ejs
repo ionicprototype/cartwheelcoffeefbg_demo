@@ -1,0 +1,22 @@
+<% if(files){ %>
+    <% files.forEach(function(file) { %>
+        <% if(file.isImage) { %>
+            <div class='img-gallery col-6 col-sm-4 col-md-3 col-xl-2 p-2'> <!--  -->
+                <img class='img-show-container rounded' src='image/<%= file.filename %>' alt='Error loading file'>
+                <% if(user) { %>
+                    <div class='img-delete-container' data-toggle='popover' data-trigger='hover' data-placement='top' data-content='Click to remove image.'>
+                        <form method='POST' action='/image/<%= file._id %>?_method=DELETE'>
+                            <button class='btn btn-danger-transparent' aria-label='Delete'>
+                                <i class='fas fa-trash-alt'></i>
+                            </button>
+                        </form>
+                    </div>
+                <% } %>
+            </div>
+        <% } else { %>
+            <%= file.filename %>
+        <% } %>
+<% }) %>
+<% } else { %>
+    <p>No files to show</p>
+<% } %>

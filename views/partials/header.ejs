@@ -1,0 +1,62 @@
+
+<html lang="en-US">
+    <head>
+        <title>CartWheel Coffee</title>
+        <!-- REQUIRED META TAGS -->
+        <meta charset='utf-8'>
+        <meta name="Description" content="Cartwheel Coffee FBG (Fredericksburg, TX): your friendly local traveling cart that delivers all your caffeine needs on wheels!">
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <!-- LOCAL STYLESHEET -->
+        <link rel='stylesheet' type='text/css' href='../../public/stylesheets/app.css'>
+        <!-- BOOTSTRAP 4.3.1 CDN -->
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+        <!-- FAVICON CDN -->
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' crossorigin='anonymous'>
+        <!-- GOOGLE FONTS FREDERICKA THE GREAT (HEADER) / SPECIAL ELITE (TEXT) -->
+        <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Special+Elite&display=swap' rel='stylesheet'>
+    </head>
+    <body>
+
+        <div class='headerBanner'>
+            <div class='row social-links'>
+                <div class='col px-0'>
+                    <a href='https://www.facebook.com/fritztowntx/'><img src='/public/images/f_logo_RGB-Blue_58.png' alt='Facebook Logo' class='d-inline px-0 col fb-link'></a>
+                </div>
+                <div class='col px-0'></div>
+                <div class='col px-0'>
+                    <a href='https://www.instagram.com/cartwheelcoffeefbg/'><img src='/public/images/Instagram_AppIcon_Aug2017.png' alt='Instagram Logo' class='d-inline px-0 col inst-link'></a> 
+                </div>
+            </div>
+        </div>            
+        <nav class='navbar fixed navbar-expand-lg navbar-light bg-light sticky-top py-1'>
+                <button data-toggle='modal' data-target='#loginModal' class='btn btn-primary-outline'>
+                    <% if(user) { %>
+                        <style>
+                            .fa-mug-hot {
+                                color: forestgreen;
+                            }
+                        </style>
+                    <% } %>
+                    <i class='fas fa-mug-hot'></i>
+                </button>
+                <div style='color: #343a40; display: inline-block' class='px-2'>Cartwheel Coffee FBG</div>
+            <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarMenuContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class='collapse navbar-collapse justify-content-end' id='navbarMenuContent'>
+                <ul class='navbar-nav ml-auto'>
+                    <li class='nav-item active'>
+                    <a class='nav-link' href='/'>Home</a>
+                    </li>
+                    <li class='nav-item active'>
+                        <a class='nav-link' href='/about'>About</a>
+                    </li>
+                    <li class='nav-item active'>
+                        <a class='nav-link' href='/menu'>Menu</a>
+                    </li>
+                    <li class='nav-item active'>
+                        <a class='nav-link' href='/contact'>Contact</a>
+                    </li>      
+                </ul>
+            </div>
+        </nav>

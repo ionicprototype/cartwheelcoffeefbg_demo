@@ -1,0 +1,39 @@
+<div class='row d-flex justify-content-center'>
+    <div class='d-flex flex-column'>
+        <h1>Announcements</h1>
+    </div>
+    <% if(user) { %>
+        <div class='d-flex flex-column'>
+            <!-- Icon for New Modal Announcement -->
+            <div class='d-inline px-2' data-toggle='popover' data-trigger='hover' data-placement='right' data-content='Click to create new announcement.'>    
+                <span data-toggle='modal' data-target='#newAnnouncementModal' >
+                    <i class='fas fa-plus-square'></i>
+                </span>
+            </div> 
+            <!-- New Announcement Modal -->
+            <div style='color: black' class='modal fade' id='newAnnouncementModal' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+                <div class='modal-dialog' role='document'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <h5 class='modal-title'>Make New Announcement</h5>
+                            <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                                <span aria-hidden='true'>&times;</span>
+                            </button>
+                        </div>
+                        <form action='/announcements' method='POST'>
+                            <div class='modal-body'>
+                                <div class='form-group'>
+                                    <input type='text' class='form-control' placeholder='Enter Announcement here!' name='announcement[announcement]'></input>
+                                </div>
+                            </div>
+                            <div class='modal-footer'>
+                                <button type='submit' class='btn btn-success' aria-label='Submit'>Post</button>
+                                <button type='button' class='btn btn-danger' data-dismiss='modal' aria-label='Cancel'>Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>
