@@ -12,26 +12,26 @@ In order to properly use this application, you will need access to the following
 
 Server-side dependencies required to run the application properly at the time of release are: 
 
-|     npm Package Name    | Version |   Use  |
-|:-----------------------:|:-------:|:------:|
-|          async          | 3.1.0   | Text   |
-|       body-parser       | 1.19.0  | Text   |
-|      cookie-session     | 1.3.3   | Text   |
-|         crypto          | 1.0.1   | Text   |
-|           ejs           | 2.7.1   | Text   |
-|         express         | 4.17.1  | Text   |
-|     express-sanitizer   | 1.0.5   | Text   |
-|           fs            | 0.0.1   | Text   |
-|        googleapis       | 43.0.0  | Text   |
-|      gridfs-stream      | 1.1.1   | Text   |
-|     method-override     | 3.0.0   | Text   |
-|        mongoose         | 5.7.1   | Text   |
-|         multer          | 1.4.2   | Text   |
-|  multer-gridfs-storage  | 3.3.0   | Text   |
-|        nodemailer       | 6.3.0   | Text   |
-|        nodemon          | 1.19.2  | Text   |
-|        passport         | 0.4.0   | Text   |
-| passport-google-oauth20 | 2.0.0   | Text   |
+|     npm Package Name    | Version |
+|:-----------------------:|:-------:|
+|          async          | 3.1.0   |
+|       body-parser       | 1.19.0  |
+|      cookie-session     | 1.3.3   |
+|         crypto          | 1.0.1   |
+|           ejs           | 2.7.1   |
+|         express         | 4.17.1  |
+|     express-sanitizer   | 1.0.5   |
+|           fs            | 0.0.1   |
+|        googleapis       | 43.0.0  |
+|      gridfs-stream      | 1.1.1   |
+|     method-override     | 3.0.0   |
+|        mongoose         | 5.7.1   |
+|         multer          | 1.4.2   |
+|  multer-gridfs-storage  | 3.3.0   |
+|        nodemailer       | 6.3.0   |
+|        nodemon          | 1.19.2  |
+|        passport         | 0.4.0   |
+| passport-google-oauth20 | 2.0.0   |
 
 ## Configuring the App
 
