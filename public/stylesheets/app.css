@@ -27,6 +27,33 @@ DESC: UPDATES HEADER IMAGE/NAVBAR/NAVBAR LINKS
 .navbar-nav {
     text-align: center;
 }
+@media only screen and (max-width: 768px) {
+    .headerBanner {
+        background-position-y: 45%;
+        max-height: 25%;
+    }
+ }
+@media (min-width: 768px) {
+    .headerBanner {
+        background-position-y: 45%;
+    }
+ }
+ @media (min-width: 992px) {
+    .headerBanner {
+        background-position-y: 35%;
+    }
+ }
+ /* DESC: RESIZES HEADER/SOCIAL MEDIA CONTAINER FOR MOBILE DEVICES */
+ @media only screen and (max-width: 600px) {
+    .headerBanner {
+        background-position-y: 45%;
+        max-height: 25%;
+    }
+    .social-links {
+        right: 10%;
+        max-width: 100px;
+    }
+ }
 /* 
 ROUTE: ALL      
 ITEM: BODY
